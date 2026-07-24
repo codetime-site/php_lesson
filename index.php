@@ -34,8 +34,7 @@ class Motor extends Car{
 
 }
 
-$mycar = new Car( "Tayota", "Black" );
-$myMotor = new Motor(3.5);
+$myMotor = new Motor( "Tayota", "Black", 3.5);
 $out = $myMotor -> outMotor();
 
 echo $out ;  
