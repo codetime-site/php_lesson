@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 // parent
+
 class Car{  
 
     public string $brand;
@@ -22,15 +23,19 @@ class Motor extends Car{
    
     public float $motors;
 
+    public function __construct(string $brand, string $color, float $motors){
+        parent::__construct($brand, $color); 
+        $this -> motors = $motors;
+    }
+
     public function outMotor( ) : string{
         return 'car: ' . $this->brand . ", " . "color: " . $this -> color . ": ". "motor: " . $this -> motors ;
     }
 
 }
 
-
-$myMotor = new Motor("Tayota", "Black");
-$myMotor -> motors = 3.5;
+$mycar = new Car( "Tayota", "Black" );
+$myMotor = new Motor(3.5);
 $out = $myMotor -> outMotor();
 
 echo $out ;  
