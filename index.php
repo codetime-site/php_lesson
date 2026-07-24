@@ -6,7 +6,6 @@ class Car{
     public string $brand;
     public string $color;
 
-
     public function __construct( string $brand, string $color ){
         $this -> brand = $brand;
         $this -> color = $color;
@@ -17,9 +16,8 @@ class Car{
     }
 }
 
-$myCar = new Car();
-$myCar -> brand = "Tayota";
-$myCar -> color = "white";
+$myCar = new Car("Tayota", "Black");
+// $out = 
 
-echo $myCar->outMethod();
+echo $out; 
 echo "\n";
