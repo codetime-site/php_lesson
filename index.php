@@ -1,7 +1,7 @@
 <?php
 
 
-class car{
+class Car{
     public string $brand;
     public string $color;
 
@@ -10,3 +10,11 @@ class car{
     }
 
 }
+
+$myCar = new Car();
+
+$myCar -> brand = "Tayota";
+$myCar -> color = "white";
+
+echo $myCar->color;
+echo "\n";
