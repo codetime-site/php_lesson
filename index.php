@@ -17,7 +17,7 @@ class Car{
 }
 
 $myCar = new Car("Tayota", "Black");
-// $out = 
+$out = $myCar -> outMethod();
 
-echo $out; 
+echo $out ;  
 echo "\n";
