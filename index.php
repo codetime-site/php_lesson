@@ -16,5 +16,5 @@ $myCar = new Car();
 $myCar -> brand = "Tayota";
 $myCar -> color = "white";
 
-echo $myCar->color;
+echo $myCar->brand;
 echo "\n";
