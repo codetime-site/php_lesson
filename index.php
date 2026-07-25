@@ -56,10 +56,28 @@ $objStatic3 = new CarStatic();
 
 
 class MathHelp {
-    public static function plus(int $a, int $b) {
-        return $a + $b;
+
+    public static int $a;
+    public static int $b;
+            
+    public function __construct(int $a, int $b) {
+        self::$a = $a;
+        self::$b = $b;
     }
+
+    public static function plus() {
+        return  " This '" . __FUNCTION__. "' func do it: " . self::$a . " + " . self::$b . " = " . self::$a + self::$b . "\n";
+    }
+
+    public static function multiplication() {
+        return " This '" . __FUNCTION__. "' func do it: " . self::$a . " * " . self::$b . " = " .  self::$a * self::$b;
+    }
+
 }
 
-echo MathHelp::plus(5, 9);  
+
+$objM = new MathHelp(5, 6); ;
+echo $objM::plus() ;
+echo $objM::multiplication() ;
+
 echo "\n";
