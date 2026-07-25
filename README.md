@@ -5,7 +5,7 @@
  - What is a __construct?
  - What is a Properties?
  - What is a method?
- - What is a static?
+ - What is a static
  - What is a extends?
  - What is a Object?
  - What is a access modifiers (областями видимости или ( модификаторами доступа).)?
@@ -13,6 +13,7 @@
 
 ### What is a class? 
  - sadasdas
+ - [link on code](index.php#L6);
 
 
 ### What is a static?
@@ -38,3 +39,7 @@
     echo Counter::$count; // Выведет: 2
     
 ```
+
+ #### [link on code](index.php#L42);
+
+ > hello

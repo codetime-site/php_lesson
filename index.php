@@ -46,9 +46,14 @@ class CarStatic{
         self::$count++;
     }   
 }
-echo CarStatic::$count; // Выведет: 0
 
-// $objStatic = new CarStatic();
+
+$objStatic = new CarStatic();
+$objStatic1 = new CarStatic();
+$objStatic3 = new CarStatic();
+
+
+echo CarStatic::$count; // Выведет: 0
 // echo $objStatic::$count;
 
 
