@@ -47,13 +47,19 @@ class CarStatic{
     }   
 }
 
-
 $objStatic = new CarStatic();
 $objStatic1 = new CarStatic();
 $objStatic3 = new CarStatic();
 // echo CarStatic::$count; // Выведет: 3
-echo $objStatic::$count;
+// echo $objStatic::$count;
 
 
-// echo $out ;  
+
+class MathHelp {
+    public static function plus(int $a, int $b) {
+        return $a + $b;
+    }
+}
+
+echo MathHelp::plus(5, 9);  
 echo "\n";

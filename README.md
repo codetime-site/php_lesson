@@ -5,7 +5,7 @@
  - What is a __construct?
  - What is a Properties?
  - What is a method?
- - What is a static
+ - [What is a static ?](#static)
  - What is a extends?
  - What is a Object?
  - What is a access modifiers (областями видимости или ( модификаторами доступа).)?
@@ -16,8 +16,10 @@
  - [link on code](index.php#L6);
 
 
-### What is a static?
+<h3 style ='color:green' id="static">What is a static</h3>
+<!-- ### What is a static -->
  - Ключевое слово static в PHP делает свойства и методы принадлежащими самому классу, а не конкретным объектам.Обычные свойства и методы требуют создания объекта через new. Статические элементы доступны напрямую через имя класса.
+
  ``` php
     class Counter {
         // Статическое свойство для подсчета созданных объектов
@@ -40,6 +42,8 @@
     
 ```
 
- #### [link on code](index.php#L42);
+ - [link on code](index.php#CarStatic);
 
+#### [Статические методы (функции-помощники)](index.php#L58)
+    
  > hello
