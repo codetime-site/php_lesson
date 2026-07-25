@@ -51,10 +51,8 @@ class CarStatic{
 $objStatic = new CarStatic();
 $objStatic1 = new CarStatic();
 $objStatic3 = new CarStatic();
-
-
-echo CarStatic::$count; // Выведет: 0
-// echo $objStatic::$count;
+// echo CarStatic::$count; // Выведет: 3
+echo $objStatic::$count;
 
 
 // echo $out ;  
