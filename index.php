@@ -34,8 +34,23 @@ class Motor extends Car{
 
 }
 
-$myMotor = new Motor( "Tayota", "Black", 3.5);
-$out = $myMotor -> outMotor();
+// $myMotor = new Motor( "Tayota", "Black", 3.5);
+// $out = $myMotor -> outMotor();
 
-echo $out ;  
+// 3. static
+
+class CarStatic{  
+    public static int $count = 0;
+
+    public function __construct( ){
+        self::$count++;
+    }   
+}
+echo CarStatic::$count; // Выведет: 0
+
+// $objStatic = new CarStatic();
+// echo $objStatic::$count;
+
+
+// echo $out ;  
 echo "\n";
