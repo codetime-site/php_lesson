@@ -76,8 +76,20 @@ class MathHelp {
 }
 
 
-$objM = new MathHelp(5, 6); ;
-echo $objM::plus() ;
-echo $objM::multiplication() ;
+// $objM = new MathHelp(5, 6); ;
+// echo $objM::plus() ;
+// echo $objM::multiplication() ;
 
-echo "\n";
+
+?>
+
+<p>babay</p>
+<?php echo 'hahaha'; ?>
+<p>babay</p>
+
+<p>babay</p>
+<?=  "hello";?> 
+<p>babay</p>
+
+
+// echo "\n";
