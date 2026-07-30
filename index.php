@@ -82,14 +82,3 @@ class MathHelp {
 
 
 ?>
-
-<p>babay</p>
-<?php echo 'hahaha'; ?>
-<p>babay</p>
-
-<p>babay</p>
-<?=  "hello";?> 
-<p>babay</p>
-
-
-// echo "\n";
