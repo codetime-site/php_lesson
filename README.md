@@ -18,6 +18,13 @@
  - [link on code](index.php#L6);
 
 
+[hello](part/hello.md)
+
+@include('part/hello.md')
+
+<iframe src="index.php" title="description"></iframe>
+
+
 <h3 style ='color:green' id="static">What is a static</h3>
 <!-- ### What is a static -->
  - Ключевое слово static в PHP делает свойства и методы принадлежащими самому классу, а не конкретным объектам.Обычные свойства и методы требуют создания объекта через new. Статические элементы доступны напрямую через имя класса.

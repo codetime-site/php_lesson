@@ -76,9 +76,4 @@ class MathHelp {
 }
 
 
-// $objM = new MathHelp(5, 6); ;
-// echo $objM::plus() ;
-// echo $objM::multiplication() ;
-
-
 ?>
