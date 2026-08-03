@@ -20,13 +20,31 @@ function number(int $a) :int {
 }
 
 // фуекции можно обявить в переменный 
-$testVar = number(22);
-echo $testVar + $testVar;
 
-// вызвать в функции, функцию
+
+// #вызвать в функции, функцию
 function test ( $n ){
     return number($n);
 }
 
-echo test( 5 );
-echo "\n";
+
+// Знак вопроса означает, что функция вернет массив ИЛИ null
+function getUserCart(int $userId): ?array {
+    $cart = loadFromDatabase($userId);
+    
+    if (empty($cart)) {
+        return null; // Корзины нет или пользователь не найден
+    }
+    
+    return $cart; // Возвращаем массив с товарами
+}
+
+// Проверка результата
+$cart = getUserCart(123);
+
+if ($cart === null) {
+    echo "Корзина пуста!";
+} else {
+    echo "В корзине товаров: " . count($cart);
+}
+
