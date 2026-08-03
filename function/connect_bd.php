@@ -11,12 +11,3 @@
 
 //     return new PDO($dsn, $username, $password);
 // }
-
-class hello {
-    public string $bye;
-    public string $name;
-    
-    function __construct()
-    
-
-}
