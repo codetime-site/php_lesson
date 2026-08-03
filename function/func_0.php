@@ -10,6 +10,4 @@ $sayHello = function() use ($name, &$num) {
 };
 
 echo $sayHello();
-// привет илсина
-
 
