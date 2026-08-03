@@ -18,11 +18,8 @@
  - [link on code](index.php#L6);
 
 
-[hello](part/hello.md)
 
-@include('part/hello.md')
 
-<iframe src="index.php" title="description"></iframe>
 
 
 <h3 style ='color:green' id="static">What is a static</h3>
