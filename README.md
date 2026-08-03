@@ -12,6 +12,8 @@
  - What is a Object?
  - What is a access modifiers (областями видимости или ( модификаторами доступа).)?
  - What is a Object?
+ - [Все об Функциях](./function/README.md)
+
 
 ## What is a class? 
  - sadasdas
