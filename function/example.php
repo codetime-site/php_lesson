@@ -3,21 +3,22 @@
 declare(strict_types=1);
 
 // Задача 1 (★☆☆☆☆)
-
-function sum(int $a, int $b ) :int {
-    return $a + $b ;
-}
+function sum(int $a, int $b ): int { return $a + $b; }
 
 // echo sum(5, 7) . "\n";
 
-// task 2 (★★☆☆☆) // 
 
+
+// task 2 (★★☆☆☆) // 
 function isEven(int $num): bool{
     if ($num < 0 ) return isEven($num * -1);
     return $num % 2 === 0;
 }
 
 // var_dump (isEven(-36));
+
+
+
 // task №3
 function findMax(array $numbers){
     if( empty( $numbers) ) return null;
@@ -25,11 +26,15 @@ function findMax(array $numbers){
     foreach ( $numbers as $num ) if($num > $max) $max = $num;
     return $max;
 }
+
 // $arr = [5,6,7,9,7,98,8,9,756];
 // var_dump( findMax($arr) );
 
+
+
+//  task №4
 function calculator(int $a, int $b, string $operator){
-    return match ($operator){
+    return match ($operator) {
         '+' => $a + $b,
         '*' => $a * $b,
         '-' => $a - $b,
@@ -40,7 +45,9 @@ function calculator(int $a, int $b, string $operator){
 
 // var_dump(calculator(5, 0, ""));
 
-// echo "\n";
+
+
+//  task №5
 function generatePassword(int $num, bool $Numbers, bool $Letters, bool $Charsets){
     
     // Символы который надо использовать 
@@ -64,11 +71,4 @@ function generatePassword(int $num, bool $Numbers, bool $Letters, bool $Charsets
     return $password;
 }
 
-// Пример использования
-// echo generatePassword(160, true, true, true) . "\n"; 
-
-echo generatePassword(12, true, true, true) . "\n";
-
-// $test = "hello";
-// echo $test[1];
-// var_dump(random_int(100, 999));
+// echo generatePassword(12, true, true, true);
